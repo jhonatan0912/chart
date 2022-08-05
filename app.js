@@ -4,7 +4,7 @@ let day = document.getElementsByClassName('day');
 let amountBox = document.getElementsByClassName('amount');
 
 async function getData() {
-  const response = await fetch("http://127.0.0.1:5500/data.json");
+  const response = await fetch("https://github.com/jhonatan0912/chart/blob/master/data.json");
   const json = await response.json();
   // console.log(JSON.parse(json));
   // console.log(json)

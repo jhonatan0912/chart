@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--Cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  background-color: var(--Soft-red);
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 1em;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  background-color: var(--Dark-brown);
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin: 0 40px 0 0;
+  position: absolute;
+  left: -13px;
+}
+
+.my__balance__title {
+  font-weight: 400;
+  font-size: .9em;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+main {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 10px;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.graphic {
+  display: flex;
+  justify-content: space-around;
+}
+
+.amount__container {
+  height: 245px;
+  width: 30px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.amount {
+  background-color: var(--Soft-red);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+.amount:hover::before {
+  content: "zzzzz";
+  font-size: .5em;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 1em;
+  background-color: var(--Dark-brown);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.cyan {
+  background-color: var(--Cyan);
+}
+
+.day {
+  color: var(--Medium-brown);
+  margin: 10px 0 0 0;
+}
+
+.main__title {
+  text-align: left;
+  color: var(--Dark-brown);
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+footer {
+  width: 80%;
+  border-radius: 10px;
+  padding: 1.5em 1em;
+  /* margin: 20px auto; */
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total__month {
+  font-size: .9em;
+  color: var(--Medium-brown);
+}
+
+.footer__price {
+  font-weight: 700;
+  font-size: 1.4em;
+  color: var(--Dark-brown);
+}
+
+.percent {
+  text-align: right;
+}
+
+.percent__number {
+  font-size: .9em;
+  color: var(--Dark-brown);
+  font-weight: 700;
+}
+
+@media screen and (min-width:1440px) {
+  header {
+    width: 25%;
+  }
+
+  main {
+    width: 25%;
+  }
+
+  footer {
+    width: 25%;
+  }
+}

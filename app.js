@@ -34,10 +34,30 @@ async function getData() {
   amountBox[5].style.height = `${amount6 + '%'}`;
   amountBox[6].style.height = `${amount7 + '%'}`;
 
+  amountBox[0].getAttribute("data-state");
+  amountBox[0].setAttribute("data-state", `${'$' + amount1}`);
+
+  amountBox[1].getAttribute("data-state");
+  amountBox[1].setAttribute("data-state", `${'$' + amount2}`);
+
+  amountBox[2].getAttribute("data-state");
+  amountBox[2].setAttribute("data-state", `${'$' + amount3}`);
+
+  amountBox[3].getAttribute("data-state");
+  amountBox[3].setAttribute("data-state", `${'$' + amount4}`);
+
+  amountBox[4].getAttribute("data-state");
+  amountBox[4].setAttribute("data-state", `${'$' + amount5}`);
+
+  amountBox[5].getAttribute("data-state");
+  amountBox[5].setAttribute("data-state", `${'$' + amount6}`);
+
+  amountBox[6].getAttribute("data-state");
+  amountBox[6].setAttribute("data-state", `${'$' + amount7}`);
 }
 
 
 
 getData();
-amountBox.setAttribute('data-before', content);
+
 

@@ -96,8 +96,8 @@ main {
 }
 
 .amount:hover::before {
-  content: "zzzzz";
-  font-size: .5em;
+  content: attr(data-state);
+  font-size: .6em;
   position: absolute;
   top: -40px;
   left: 0;
@@ -105,6 +105,7 @@ main {
   background-color: var(--Dark-brown);
   color: #fff;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .cyan {
